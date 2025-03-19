@@ -1,0 +1,32 @@
+/* Telas de 320px a 414px */
+
+@media (min-width: 320px) and (max-width: 430px) {
+    /* body {
+        width: 320px;
+    } */
+    header{
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+    }
+    .header-center{
+        width: 80px;
+    }
+
+    .container-main{
+        width: 100vw;
+        display: grid;
+        grid-template: auto / 320px;
+
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template: auto / 100vw;
+        justify-content: center;
+        border: 1px solid;
+    }
+}
