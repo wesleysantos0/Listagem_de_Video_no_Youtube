@@ -4,29 +4,141 @@
     /* body {
         width: 320px;
     } */
-    header{
+}
+
+
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    .mobile {
         display: grid;
-        grid-template: 1fr / repeat(3, 1fr);
+        grid-template: repeat(4, 1fr) / 1fr;
+        min-width: 320px;
+        max-width: 420px;
+        border: 1px solid;
+        height: 100vh;
+        margin: 0 auto;
     }
-    .header-center{
-        width: 80px;
-    }
-
-    .container-main{
-        width: 100vw;
+    .mobileH {
+        width: 100%;
+        height: 80px;
         display: grid;
-        grid-template: auto / 320px;
-
-    }
-
-    aside {
-        display: none;
-    }
-
-    main {
-        display: grid;
-        grid-template: auto / 100vw;
+        grid-template: 50px / 50%  1fr;
+        align-items: center;
         justify-content: center;
+        padding: 10px;
         border: 1px solid;
     }
-}
+
+    .hmobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border: .5px solid #808080b6;
+        border-radius: 5px;
+    }
+
+    /* Conteudo do main */
+    .mainMob{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .conteudoV {
+        border: 1px solid;
+       display: flex;
+       flex-direction: column;
+
+       margin-top: 30px;
+    }
+    section {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .logoDio{
+        height: 40px;
+    }
+
+    .conteudoV > section {
+
+        display: flex;
+
+        margin-top: 20px;
+    }
+    .infVid {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+
+
+
+    /* Estilo do menu inferior */
+
+    /* footer {
+        position: sticky;
+     
+        left: -.1px;
+        width: 100%;
+    }
+    .fMobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        height: 50px;
+        width: 100%;
+        background-color: aqua;
+       
+    }
+
+    .fMobile > ul {
+        list-style: none;
+    }
+
+    #buttAdd{
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+    } */
+
+    .footeer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5vh; /* Ocupa 80% da altura da tela */
+        background-color: aqua; /* Apenas para visualizar */
+    }
+    
+    .fMobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 50px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .fMobile > ul {
+        list-style: none;
+    }
+    
+    #buttAdd {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+    }
+
+    .bi {
+        color:red;
+    }
