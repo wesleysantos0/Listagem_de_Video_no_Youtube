@@ -11,15 +11,23 @@
         font-family: Arial, Helvetica, sans-serif;
         box-sizing: border-box;
     }
+
+    .dark-mode {
+        background: black;
+        color: white;
+    }
+
+   
     .mobile {
         display: grid;
         grid-template: repeat(4, 1fr) / 1fr;
         min-width: 320px;
         max-width: 420px;
-        border: 1px solid;
+        /* border: 1px solid; */
         height: 100vh;
         margin: 0 auto;
     }
+    
     .mobileH {
         width: 100%;
         height: 80px;
@@ -28,8 +36,10 @@
         align-items: center;
         justify-content: center;
         padding: 10px;
-        border: 1px solid;
+        border-bottom: .5px solid black;;
+        border-radius: 10px;
     }
+
 
     .hmobile {
         display: flex;
@@ -39,6 +49,16 @@
         border: .5px solid #808080b6;
         border-radius: 5px;
     }
+
+    .hmobile {
+        box-shadow: 1px 1px 10px rgb(112, 112, 112);
+    }
+
+    .hmobile > .bi {
+        color: black;
+        width: 30px;
+    }
+
 
     /* Conteudo do main */
     .mainMob{
@@ -52,11 +72,14 @@
     }
 
     .conteudoV {
-        border: 1px solid;
+        /* border: 1px solid; */
        display: flex;
        flex-direction: column;
 
        margin-top: 30px;
+       box-shadow: 1px 1px 10px #6d6d6dc2;
+       border-radius: 5px;
+       padding: 10px;
     }
     section {
         display: flex;
@@ -83,33 +106,6 @@
 
 
     /* Estilo do menu inferior */
-
-    /* footer {
-        position: sticky;
-     
-        left: -.1px;
-        width: 100%;
-    }
-    .fMobile {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        
-        height: 50px;
-        width: 100%;
-        background-color: aqua;
-       
-    }
-
-    .fMobile > ul {
-        list-style: none;
-    }
-
-    #buttAdd{
-        width: 2em;
-        height: 2em;
-        border-radius: 50%;
-    } */
 
     .footeer {
         position: fixed;
@@ -141,4 +137,9 @@
 
     .bi {
         color:red;
+    }
+
+    .dark-mode {
+        background: black;
+        color: white;
     }
